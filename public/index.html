@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>House Panel</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <div class="time" id="clock">--:--</div>
+      <div class="heading">
+        <div class="title" id="panel-title">House Panel</div>
+        <div class="subtitle" id="panel-subtitle">Lights</div>
+      </div>
+      <div class="date" id="date-label">Loading</div>
+    </div>
+
+    <div class="notice" id="notice">Connecting to Home Assistant...</div>
+    <div class="rooms" id="rooms"></div>
+    <div class="scenes" id="scenes"></div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

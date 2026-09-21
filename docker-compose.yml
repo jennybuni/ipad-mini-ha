@@ -1,0 +1,11 @@
+services:
+  ipad-mini-ha-panel:
+    build: .
+    container_name: ipad-mini-ha-panel
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "${PANEL_PORT:-8080}:8080"
+    volumes:
+      - ./config:/app/config:ro

@@ -1,0 +1,84 @@
+{
+  "title": "House Panel",
+  "subtitle": "Lights",
+  "refreshSeconds": 12,
+  "rooms": [
+    {
+      "name": "Living Room",
+      "icon": "sofa",
+      "lights": [
+        {
+          "name": "Ceiling",
+          "entity": "light.living_room_ceiling",
+          "dimmable": true
+        },
+        {
+          "name": "Lamp",
+          "entity": "light.living_room_lamp",
+          "dimmable": false
+        }
+      ]
+    },
+    {
+      "name": "Kitchen",
+      "icon": "kitchen",
+      "lights": [
+        {
+          "name": "Ceiling",
+          "entity": "light.kitchen_ceiling",
+          "dimmable": true
+        },
+        {
+          "name": "Counter",
+          "entity": "light.kitchen_counter",
+          "dimmable": true
+        }
+      ]
+    },
+    {
+      "name": "Bedroom",
+      "icon": "bed",
+      "lights": [
+        {
+          "name": "Main",
+          "entity": "light.bedroom_main",
+          "dimmable": true
+        },
+        {
+          "name": "Bedside",
+          "entity": "light.bedside_lamp",
+          "dimmable": true
+        }
+      ]
+    },
+    {
+      "name": "Hall",
+      "icon": "hall",
+      "lights": [
+        {
+          "name": "Hall Light",
+          "entity": "light.hall",
+          "dimmable": false
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Night",
+      "entity": "scene.night"
+    },
+    {
+      "name": "Movie",
+      "entity": "scene.movie"
+    },
+    {
+      "name": "Evening",
+      "entity": "scene.evening"
+    },
+    {
+      "name": "All Off",
+      "entity": "scene.all_off"
+    }
+  ]
+}

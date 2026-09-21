@@ -1,0 +1,13 @@
+{
+  "name": "ipad-mini-ha-panel",
+  "version": "1.0.0",
+  "description": "Lightweight Home Assistant wall panel for an iPad Mini 1.",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.22.3"
+  }
+}

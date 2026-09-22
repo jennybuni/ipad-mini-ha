@@ -43,7 +43,7 @@ ipad-mini-ha-panel/
    ```sh
    HOME_ASSISTANT_URL=http://homeassistant.local:8123
    HOME_ASSISTANT_TOKEN=your_long_lived_access_token
-   PANEL_PORT=8080
+   PANEL_PORT=8082
    ```
 
 3. In Home Assistant, create a long-lived access token:
@@ -61,7 +61,7 @@ ipad-mini-ha-panel/
 6. Open the panel:
 
    ```text
-   http://YOUR_DOCKER_HOST_IP:8080
+   http://YOUR_DOCKER_HOST_IP:8082
    ```
 
 On the iPad Mini, open that address in Safari. For a wall-panel feel, use Safari's "Add to Home Screen" option, then launch it from the home screen.
@@ -147,4 +147,4 @@ If the iPad cannot load the page:
 
 - Make sure the iPad and Docker host are on the same network.
 - Use the Docker host's LAN IP address.
-- Try `http://IP_ADDRESS:8080` rather than a hostname.
+- Try `http://IP_ADDRESS:8082` rather than a hostname.

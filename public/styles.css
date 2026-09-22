@@ -21,12 +21,12 @@ input {
 .page {
   width: 100%;
   min-height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .topbar {
-  height: 78px;
-  padding: 12px 18px 8px;
+  height: 66px;
+  padding: 8px 14px 6px;
   background: #171b22;
   border-bottom: 1px solid #2d3440;
   -webkit-box-sizing: border-box;
@@ -41,8 +41,8 @@ input {
 
 .time {
   width: 22%;
-  font-size: 42px;
-  line-height: 54px;
+  font-size: 36px;
+  line-height: 50px;
   font-weight: 700;
 }
 
@@ -52,28 +52,28 @@ input {
 }
 
 .title {
-  font-size: 27px;
-  line-height: 34px;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: 700;
 }
 
 .subtitle {
   color: #aeb8c6;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 .date {
   width: 30%;
   color: #d7deea;
-  font-size: 20px;
-  line-height: 54px;
+  font-size: 18px;
+  line-height: 50px;
   text-align: right;
 }
 
 .notice {
-  min-height: 24px;
-  padding: 8px 18px;
+  min-height: 28px;
+  padding: 4px 14px;
   color: #f7d36b;
   background: #22202a;
   font-size: 15px;
@@ -91,15 +91,15 @@ input {
 }
 
 .rooms {
-  padding: 12px;
+  padding: 6px;
   overflow: hidden;
 }
 
 .room {
   float: left;
-  width: 50%;
-  height: 252px;
-  padding: 8px;
+  width: 33.3333%;
+  height: 552px;
+  padding: 6px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -113,13 +113,13 @@ input {
 }
 
 .room-title {
-  height: 42px;
-  padding: 0 12px;
+  height: 38px;
+  padding: 0 10px;
   color: #f9f6ed;
   background: #242b35;
   border-bottom: 1px solid #303845;
-  font-size: 19px;
-  line-height: 42px;
+  font-size: 18px;
+  line-height: 38px;
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
@@ -128,8 +128,8 @@ input {
 
 .light {
   position: relative;
-  min-height: 78px;
-  padding: 10px 12px;
+  min-height: 72px;
+  padding: 8px 10px;
   border-bottom: 1px solid #2a313d;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -140,13 +140,13 @@ input {
 }
 
 .light-main {
-  min-height: 38px;
+  min-height: 34px;
 }
 
 .toggle {
   float: left;
-  width: 58px;
-  height: 38px;
+  width: 52px;
+  height: 34px;
   border: 0;
   border-radius: 5px;
   background: #343b47;
@@ -161,11 +161,11 @@ input {
 }
 
 .light-name {
-  margin-left: 72px;
-  margin-right: 66px;
+  margin-left: 62px;
+  margin-right: 48px;
   color: #f9f6ed;
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 21px;
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
@@ -173,8 +173,8 @@ input {
 }
 
 .light-state {
-  margin-left: 72px;
-  margin-right: 66px;
+  margin-left: 62px;
+  margin-right: 48px;
   color: #9da9b8;
   font-size: 14px;
   line-height: 18px;
@@ -182,18 +182,18 @@ input {
 
 .percent {
   position: absolute;
-  top: 13px;
-  right: 12px;
-  width: 52px;
+  top: 10px;
+  right: 10px;
+  width: 42px;
   color: #cbd4df;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 28px;
   text-align: right;
 }
 
 .slider-row {
   clear: both;
-  padding-top: 8px;
+  padding-top: 6px;
 }
 
 .slider {
@@ -203,8 +203,8 @@ input {
 
 .scenes {
   clear: both;
-  height: 86px;
-  padding: 8px 12px 12px;
+  height: 76px;
+  padding: 6px 8px 8px;
   overflow: hidden;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -213,21 +213,33 @@ input {
 .scene {
   float: left;
   width: 25%;
-  height: 64px;
-  padding: 0 8px;
+  height: 62px;
+  padding: 0 6px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .scene button {
   width: 100%;
-  height: 64px;
+  height: 62px;
   border: 1px solid #3a4451;
   border-radius: 6px;
   background: #252c36;
   color: #f6f2ea;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
+}
+
+.scene-count-1 .scene {
+  width: 100%;
+}
+
+.scene-count-2 .scene {
+  width: 50%;
+}
+
+.scene-count-3 .scene {
+  width: 33.3333%;
 }
 
 .scene button:active,
@@ -253,10 +265,12 @@ input {
   }
 
   .room {
-    height: 236px;
+    width: 100%;
+    height: auto;
+    min-height: 0;
   }
 
   .light-name {
-    font-size: 18px;
+    font-size: 17px;
   }
 }

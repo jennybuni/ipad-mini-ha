@@ -81,6 +81,7 @@
     }
 
     roomsEl.innerHTML = roomsHtml;
+    scenesEl.className = "scenes scene-count-" + scenes.length;
     scenesEl.innerHTML = scenesHtml;
     roomsEl.onclick = handleClick;
     roomsEl.onchange = handleChange;

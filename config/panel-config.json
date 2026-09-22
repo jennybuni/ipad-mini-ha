@@ -1,5 +1,5 @@
 {
-  "title": "House Panel",
+  "title": "House Control",
   "subtitle": "Lights",
   "refreshSeconds": 12,
   "rooms": [
@@ -8,77 +8,61 @@
       "icon": "sofa",
       "lights": [
         {
-          "name": "Ceiling",
-          "entity": "light.living_room_ceiling",
+          "name": "Big Light",
+          "entity": "light.wiz_tunable_white_e038af",
           "dimmable": true
         },
         {
-          "name": "Lamp",
-          "entity": "light.living_room_lamp",
-          "dimmable": false
-        }
-      ]
-    },
-    {
-      "name": "Kitchen",
-      "icon": "kitchen",
-      "lights": [
-        {
-          "name": "Ceiling",
-          "entity": "light.kitchen_ceiling",
+          "name": "Cupboard Lamp",
+          "entity": "light.wiz_rgbw_tunable_1f86cc",
           "dimmable": true
         },
         {
-          "name": "Counter",
-          "entity": "light.kitchen_counter",
+          "name": "Window Lamp",
+          "entity": "light.wiz_rgbw_tunable_1f8700",
           "dimmable": true
         }
       ]
     },
+  
     {
       "name": "Bedroom",
       "icon": "bed",
       "lights": [
         {
-          "name": "Main",
-          "entity": "light.bedroom_main",
-          "dimmable": true
+          "name": "Big Light",
+          "entity": "light.wiz_tunable_white_e0435d",
+          "dimmable": false
         },
         {
-          "name": "Bedside",
-          "entity": "light.bedside_lamp",
-          "dimmable": true
+          "name": "Rach Bedside",
+          "entity": "light.wiz_rgbw_tunable_1f94e4",
+          "dimmable": false
+        },
+        {
+          "name": "Jen Bedside",
+          "entity": "light.wiz_rgbw_tunable_1f7bd4",
+          "dimmable": false
         }
       ]
     },
     {
-      "name": "Hall",
+      "name": "Stairs",
       "icon": "hall",
       "lights": [
         {
-          "name": "Hall Light",
-          "entity": "light.hall",
-          "dimmable": false
+          "name": "Stairs Light",
+          "entity": "light.controller_rgb_ir_438bea",
+          "dimmable": true
         }
       ]
     }
   ],
   "scenes": [
-    {
-      "name": "Night",
-      "entity": "scene.night"
-    },
-    {
-      "name": "Movie",
-      "entity": "scene.movie"
-    },
-    {
-      "name": "Evening",
-      "entity": "scene.evening"
-    },
+   
     {
       "name": "All Off",
-      "entity": "scene.all_off"
+      "entity": "scene.all_lights_off"
     }
   ]
 }
